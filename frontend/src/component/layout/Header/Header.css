@@ -1,0 +1,307 @@
+.speedDial {
+  position: fixed;
+  right: 0.5vmax;
+  top: 0.5vmax;
+}
+
+.speedDialIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+}
+/*
+.hi {
+  width: 8vw;
+}
+.bg {
+  background-color: #000000;
+}
+.border-box {
+  box-sizing: border-box;
+}
+
+.br-100 {
+  border-radius: 100%;
+}
+
+.db {
+  display: block;
+}
+
+.dib {
+  display: inline-block;
+}
+
+.h2 {
+  height: 2rem;
+}
+
+.link {
+  text-decoration: none;
+  transition: color 0.15s ease-in;
+}
+
+.link:link,
+.link:visited {
+  transition: color 0.15s ease-in;
+}
+
+.link:hover {
+  transition: color 0.15s ease-in;
+}
+
+.link:active {
+  transition: color 0.15s ease-in;
+}
+
+.link:focus {
+  transition: color 0.15s ease-in;
+  outline: 1px dotted currentColor;
+}
+
+.w2 {
+  width: 2rem;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.dark-gray {
+  color: #dfdfe8;
+}
+
+.mid-gray {
+  color: #555;
+}
+
+.pa3 {
+  padding: 1rem;
+}
+
+.mr3 {
+  margin-right: 1rem;
+}
+
+.mb2 {
+  margin-bottom: 0.5rem;
+}
+
+.tc {
+  text-align: center;
+}
+
+.f6 {
+  font-size: 0.875rem;
+}
+
+.v-mid {
+  vertical-align: middle;
+}
+
+.dim {
+  opacity: 1;
+  transition: opacity 0.15s ease-in;
+}
+
+.dim:hover,
+.dim:focus {
+  opacity: 0.5;
+  transition: opacity 0.15s ease-in;
+}
+
+.dim:active {
+  opacity: 0.8;
+  transition: opacity 0.15s ease-out;
+}
+
+@media screen and (min-width: 60em) {
+  .dt-l {
+    display: table;
+  }
+
+  .dtc-l {
+    display: table-cell;
+  }
+
+  .w-25-l {
+    width: 25%;
+  }
+
+  .w-75-l {
+    width: 75%;
+  }
+
+  .ph5-l {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .mr4-l {
+    margin-right: 2rem;
+  }
+
+  .mb0-l {
+    margin-bottom: 0;
+  }
+
+  .tl-l {
+    text-align: left;
+  }
+
+  .tr-l {
+    text-align: right;
+  }
+
+  .f5-l {
+    font-size: 1rem;
+  }
+}
+
+.hi1 {
+  width: 3vw;
+  padding-bottom: 7px;
+}
+.padd {
+  vertical-align: middle;
+}
+.bl {
+  display: inline;
+} */
+
+/* //////////////////////////// */
+
+.navigation {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.5rem 0rem;
+  /* background-color: #00e79c; */
+
+  box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+  padding: 1% 0;
+  font-family: Arial Black, Arial, Gadget, sans-serif;
+  z-index: 2000;
+  background-color: black;
+  background-image: radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    radial-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 30px
+    );
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+.navigation a {
+  color: #00e79c;
+}
+.brand-name {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}
+.navigation-menu {
+  margin-left: auto;
+}
+
+.navigation-menu ul {
+  display: flex;
+  padding: 0;
+}
+.navigation-menu li {
+  /* // removes default disc bullet for li tags and applies margin to left & right side */
+  list-style-type: none;
+  margin: 0 1rem;
+}
+.navigation-menu li a {
+  /* // increases the surface area of the anchor tag to span more than just the anchor text */
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.hamburger {
+  /* // removes default border on button element */
+  border: 0;
+  height: 45px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #283b8b;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  /* // positions the icon to the right and center aligns it vertically */
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+}
+.hamburger:hover {
+  background-color: #00e79c;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-menu ul {
+    margin-top: 4%;
+    position: absolute;
+    top: 60;
+    left: 0;
+
+    flex-direction: column;
+    height: 105px;
+    width: 100%;
+    height: calc(100vh - 77px);
+    background-color: white;
+    border-top: 1px solid black;
+    display: none;
+  }
+  .navigation-menu li {
+    text-align: center;
+    margin: 0;
+  }
+  .navigation-menu li a {
+    color: #00e79c;
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+  .navigation-menu li:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  .ic {
+    padding: 0;
+    width: 6vw !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-menu.expanded ul {
+    display: block;
+  }
+}
+
+.logo {
+  position: absolute;
+  width: 86px;
+  top: 0;
+}
+
+.ic {
+  padding: 0 !important;
+  width: 2vw;
+}
