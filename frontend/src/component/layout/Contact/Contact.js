@@ -8,7 +8,7 @@ const Contact = () => {
         className="mailBtn"
         href="ms-unistore-email:rashedujjaman15-11024@diu.edu.bd"
       >
-        <button>gmail: rashedujjaman15-11024</button>
+        <button>gmail: rashedujjaman15-11024@diu.edu.bd</button>
       </a>
     </div>
   );
